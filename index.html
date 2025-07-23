@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" scroll-behavior: smooth>
 <head>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Museum-fixed</title>
@@ -24,10 +24,10 @@
             </nav>
         </header>
 
-        <div class="hero-first">
+        <section class="hero-first">
             <div class="hero--info">
                 <h1>Welcome <br>to the Louvre</h1>
-                <p>From the castle to the museum</p>
+                <h2>From the castle to the museum</h2>
                 <button class="btn">Discover the Louvre</button>
             </div>
             <div class="image-container">
@@ -36,7 +36,7 @@
                     <img class="slider" src="assets/Slider_pagination.svg" alt="slider pagination">
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <main>
         <section id="Visiting">
@@ -46,7 +46,7 @@
                 <div class="tour-item">
                     <img src="assets/royal.svg" alt="Royal Palace">
                     <div>
-                        <h2>Royal Palace</h2>
+                        <h3>Royal Palace</h3>
                         <div class="line"></div>
                         <p class="virtual">360° Virtual Tour</p>
                         <p class="google">Google Street Panorama View</p>
@@ -56,7 +56,7 @@
                 <div class="tour-item">
                     <img src="assets/denon.svg" alt="Denon Wing">
                     <div>
-                        <h2>Denon Wing</h2>
+                        <h3>Denon Wing</h3>
                         <div class="line"></div>
                         <p class="virtual">360° Virtual Tour</p>
                         <p class="google">Google Street Panorama View</p>
@@ -66,7 +66,7 @@
                 <div class="tour-item">
                     <img src="assets/colonnade.svg" alt="Colonnade Perrault">
                     <div>
-                        <h2>Colonnade Perrault</h2>
+                        <h3>Colonnade Perrault</h3>
                         <div class="line"></div>
                         <p class="virtual">360° Virtual Tour</p>
                         <p class="google">Google Street Panorama View</p>
@@ -76,7 +76,7 @@
                 <div class="tour-item">
                     <img src="assets/greek.svg" alt="Greek Hall">
                     <div>
-                        <h2>Greek Hall</h2>
+                        <h3>Greek Hall</h3>
                         <div class="line"></div>
                         <p class="virtual">360° Virtual Tour</p>
                         <p class="google">Google Street Panorama View</p>
@@ -86,7 +86,7 @@
                 <div class="tour-item">
                     <img src="assets/mona.svg" alt="Mona Liza">
                     <div>
-                        <h2>Mona Liza</h2>
+                        <h3>Mona Liza</h3>
                         <div class="line"></div>
                         <p class="virtual">360° Virtual Tour</p>
                         <p class="google">Google Street Panorama View</p>
@@ -96,7 +96,7 @@
                 <div class="tour-item">
                     <img src="assets/night.svg" alt="Night Palace">
                     <div>
-                        <h2>Night Palace</h2>
+                        <h3>Night Palace</h3>
                         <div class="line"></div>
                         <p class="virtual">360° Virtual Tour</p>
                         <p class="google">Google Street Panorama View</p>
@@ -219,16 +219,16 @@
                         <h3>Ticket Type</h3>
                         <form class="Radio">
                             <div class="first">
-                                <input type="radio">
-                                <span>Permanent exhibition</span>
+                                <input type="radio" name="ticket" id="perm">
+                                <label for="perm">Permanent exhibition</label>
                             </div>
                             <div class="first">
-                                <input type="radio">
-                                <span class="temp">Temporary exhibition</span>
+                                <input type="radio" name="ticket" id="temp">
+                                <label for="temp">Temporary exhibition</label>
                             </div>
                             <div>
-                                <input type="radio">
-                                <span>Combined Admission</span>
+                                <input type="radio" name="ticket" id="comb">
+                                <label for="comb">Combined Admission</label>
                             </div>
                         </form>
                     </div>
@@ -247,9 +247,7 @@
             </div>
         </section>
 
-        <div class="parallax">
-            <img class="parallax" src="assets/parallax_1.svg" alt="parallax">
-        </div>
+        <div class="parallax"></div>
 
         <section id="Contacts">
             <h2>Contacts</h2>
@@ -259,8 +257,8 @@
                     <h3>Palais Royal Musee du Louvre</h3>
                     <div class="add">
                         <p class="pen">address: <span>75001 Paris, France</span></p>
-                        <p class="pen">phone: <span>+33(0) 1 40 20 50 50</span></p>
-                        <p>mail: <span>info@louvre.fr</span></p>
+                        <p class="pen">phone: <a href="tel:+33140205050">+33(0) 1 40 20 50 50</a></p>
+                        <p>mail: <a href="mailto:info@louvre.fr">info@louvre.fr</a></p>
                     </div>
                 </div>
                 <div class="image">
@@ -278,18 +276,36 @@
             </div>
             <div class="foot-nav">
                 <div>
-                    <p>Visiting</p>
-                    <p>Explore</p>
-                    <p>Video</p>
+                    <nav>
+                        <ul>
+                            <li><a href="#Visiting">Visiting</a></li>
+                            <li><a href="#Explore">Explore</a></li>
+                            <li><a href="#Video">Video</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div>
-                    <p>Gallery</p>
-                    <p>Tickets</p>
-                    <p>Contacts</p>
+                    <nav>
+                        <ul>
+                            <li><a href="#Gallery">Visiting</a></li>
+                            <li><a href="#Tickets">Tickets</a></li>
+                            <li><a href="#Contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="sss">
-                <img class="Social" src="assets/Social.svg" alt="social">
+                <a href="https://www.youtube.com/c/rollingscopesschool" target="_blank">
+                    <img src="assets/youtu.svg" alt="youtube">
+                </a>
+                <a href="https://www.instagram.com/rsschool_news/" target="_blank"">
+                    <img src="assets/inst.svg" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/rsschoolEN/" target="_blank">
+                    <img src="assets/face.svg" alt="facebook">
+                </a>
+                <img src="assets/sna.svg" alt="snapchat">
+                <img src="assets/pinter.svg" alt="pinterest">
             </div>
         </div>
         <div class="hor"></div>

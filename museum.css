@@ -45,12 +45,24 @@ header .hero--logo{
     height: 33px;
     display: flex;
     justify-content: space-between; 
+    color: #fff;
+}
+
+.hero--logo:hover span{
+    color: #9D8665;
+    transition: 1s ease;
+    cursor: pointer;
 }
 
 .hero--logo img{
     display: inline-block;
     width: 47px;
     height: 24px;
+}
+
+.hero--logo:hover img{
+    filter: brightness(0) saturate(100%) invert(63%) sepia(37%) saturate(550%) hue-rotate(352deg) brightness(93%) contrast(93%);
+    transition: 0.5s ease;
 }
 
 header .logo{
@@ -91,6 +103,11 @@ header nav ul li a {
     color: #fff;
 }
 
+header nav ul li a:hover{
+    color: #9D8665;
+    transition: 1s ease;
+}
+
 .hero-first{
     width: 1440px;
     height: 810px;
@@ -120,7 +137,7 @@ div .hero--info {
     text-transform: uppercase;
 }
 
-.hero--info p{
+.hero--info h2{
     width: 445px;
     height: 33px;
     margin-bottom: 80px;
@@ -145,6 +162,12 @@ div .hero--info {
     background: #710707;
     border: none;
     border-radius: 10px;
+    transition: 1s ease;
+}
+
+.hero--info button:hover{
+    background: #9D8665;
+    transition: 1s ease;
 }
 
 .image-container { 
@@ -202,8 +225,14 @@ div .hero--info {
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 3px;
-    color: #9D8665;
+    color: #000000;
 } 
+
+#Visiting .virt:hover{
+    color: #9D8665;
+    transition: 1s ease;
+    cursor: default;
+}
 
 #Visiting hr{
     width: 1440px;
@@ -230,7 +259,7 @@ div .hero--info {
     height: 285px;
 }
 
-.tour-item h2{
+.tour-item h3{
     width: 500px;
     height: 35px;
     font-family: 'Forum', sans-serif;
@@ -242,12 +271,18 @@ div .hero--info {
     margin-top: 20px;
 }
 
-.line{
+.tour-item .line{
   width: 300px;
   height: 2px;
   background: #710707;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: 1s ease;
+}
+
+.tour-item:hover .line{
+    width: 440px;
+    transition: 1s ease;
 }
 
 .tour-item .virtual{
@@ -303,6 +338,12 @@ div .hero--info {
     color: #fff;
     text-transform: uppercase;
     margin-top: 20px;
+}
+
+.text h2:hover{
+    color: #9D8665;
+    transition: 1s ease;
+    cursor: default;
 }
 
 .text .brd {
@@ -374,7 +415,13 @@ div .hero--info {
   letter-spacing: 5px;
   line-height: 90px;
   text-transform: uppercase;
-  color: #9D8665;
+  color: #000000;
+}
+
+.video-head h2:hover{
+    color: #9D8665;
+    transition: 1s ease;
+    cursor: default;
 }
 
 .video-head p {
@@ -537,6 +584,12 @@ div .hero--info {
     text-transform: uppercase;
 }
 
+.gallery-main h2:hover{
+    color: #9D8665;
+    transition: 1s ease;
+    cursor: default;
+}
+
 .gallery-main .gal{
     width: 1440px;
     height: 2000px;
@@ -596,7 +649,13 @@ div .hero--info {
     letter-spacing: 5px;
     line-height: 90px;
     text-transform: uppercase;
+    color: #000000;
+}
+
+#Tickets h2:hover{
     color: #9D8665;
+    transition: 1s ease;
+    cursor: default;
 }
 
 #Tickets .line{
@@ -679,6 +738,13 @@ div .hero--info {
     bottom: -3px;
 }
 
+label{
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+
 .amount{
     width: 150px;
     height: 550px;
@@ -734,11 +800,23 @@ div .hero--info {
     margin-top: 40px;
     position: relative;
     left: -20px;
+    transition: 1s ease;
+}
+
+.amount button:hover{
+    background-color: #9D8665;
+    color: #000000;
+    transition: 1s ease;
 }
 
 .parallax{
     width: 1920px;
+    background-image: url('assets/parallax_1.svg');
     height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #Contacts{
@@ -755,8 +833,14 @@ div .hero--info {
     font-weight: 400;
     line-height: 90px;
     letter-spacing: 5px;
-    color: #9D8665;
+    color: #000000;
     text-transform: uppercase;
+}
+
+#Contacts h2:hover{
+    color: #9D8665;
+    transition: 1s ease;
+    cursor: default;
 }
 
 #Contacts .line{
@@ -792,6 +876,10 @@ div .hero--info {
     height: 30px;
 }
 
+.add p a {
+    color: #000000;
+}
+
 .pen{
     margin-bottom: 5px;
 }
@@ -823,6 +911,11 @@ footer img {
     height: 26px;
 }
 
+.foot-logo:hover img{
+    filter: brightness(0%) saturate(100%) invert(63%) sepia(37%) saturate(550%) hue-rotate(352deg) brightness(93%) contrast(93%);
+    transition: 1s ease;
+}
+
 .main-footer {
     width: 1440px;
     padding-bottom: 20px;
@@ -848,6 +941,11 @@ footer img {
     justify-content: space-between;
 }
 
+.foot-logo:hover p{
+    color: #9D8665;
+    transition: 1s ease;
+}
+
 .foot-nav {
     width: 363px;
     height: 128px;
@@ -864,7 +962,13 @@ footer img {
     flex-direction: column;
 }
 
-.foot-nav p {
+.foot-nav nav ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-nav nav ul li a{
     width: 107px;
     height: 40px;
     font-family: 'Roboto', sans-serif;
@@ -872,14 +976,34 @@ footer img {
     font-size: 22px;
     letter-spacing: 2px;
     color: #fff;
+    text-decoration: none;
+}
+
+.foot-nav nav ul li a:hover{
+    color: #9D8665;
+    transition: 1s ease;
 }
 
 .sss {
     width: 380px;
     height: 90px;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: flex-end;
+}
+
+.sss img{
+    width: 21px;
+    height: 24px;
+    color: #fff;
+    padding: 10px;
+    border: 0.5px solid #fff;
+    border-radius: 50%;
+}
+
+.sss img:hover {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(71%) saturate(502%) hue-rotate(2deg) brightness(101%) contrast(98%);
+    transition: 0.5s ease;
 }
 
 .Social {
